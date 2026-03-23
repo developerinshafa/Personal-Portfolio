@@ -1,4 +1,3 @@
-import { Bars3Icon } from "@heroicons/react/16/solid";
 
 function Navbar() {
 
