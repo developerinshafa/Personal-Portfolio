@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .hero-bg{
+  background: radial-gradient(circle at 30% 50%, #4f11b4, transparent 40%),
+              radial-gradient(circle at 70% 60%, #791256, transparent 40%),
+              black;
+  background-size: 50% 100%;
+  animation: moveBg 8s ease infinite;
+} */
+
+/* @keyframes moveBg{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 10% 10%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+} */
+/* .project-bg{
+  background: radial-gradient(circle at 30% 50%, #4f11b4, transparent 40%),
+              radial-gradient(circle at 70% 60%, #791256, transparent 40%),
+              black;
+  background-size: 400% 50%; */
+  /* animation: moveBg 8s ease infinite; */
+/* } */
+
+
+/* animation: var(--animate-pulse); pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite */
+
+/* @keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+} */
+
+/* Text Animation */
+.hero-text {
+  animation: slideRight 1.5s ease forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+img{
+   animation: floatImage 6s ease-in-out infinite;
+}
+
+/* Image Animation */
+/* .skills-img {
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+} */
+
+
+
+
+
