@@ -12,7 +12,7 @@ export default function HomePage() {
         <div className="flex justify-center md:flex-row items-center gap-4 p-8">
           <div className="p-4">
             <img
-              src="public/img/Profile image.jpeg"
+              src="/img/Profile image.jpeg"
               alt="profile image"
               className="rounded-full w-170 p-2 bg-blue-600 bg-cover bg-linear-to-r to-violet-950"
             />
@@ -80,7 +80,7 @@ export default function HomePage() {
                 </button>
 
                 <a
-                  href="/resume.pdf"
+                  href="public/resume.pdf"
                   download="Fathima-Inshafa-Resume.pdf"
                   className="px-7 py-4 rounded-xl border border-white/10 bg-white/5 hover:bg-white hover:text-black duration-300 font-semibold"
                 >
