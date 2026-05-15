@@ -1,89 +1,94 @@
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Skills", path: "/skills" },
+    { name: "Projects", path: "/projects" },
+  ];
 
   return (
-    <>
-      <div>
-        <header className=" bg-blue-950 text-white px-25 ">
-          <nav className="flex justify-between items-center px-5 text-2xl font-semibold p-5">
-            <h2 className="bg-linear-to-r from-sky-300 to-blue-500 bg-clip-text italic font-extrabold text-transparent ...  ">
-              M. Inshafa
-            </h2>
-            <ul className="flex space-x-6 justify-center items-center border-none">
-              <li>
-                <a href="/" className="hover:text-sky-200 p-2">
-                  Home
-                </a>
-              </li>
+    <header className="bg-black text-white sticky top-0 z-50 border-b border-white/10">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
+        
+        {/* Logo */}
+        <h2 className="text-3xl font-extrabold italic bg-gradient-to-r from-sky-300 to-blue-500 bg-clip-text text-transparent">
+          MF. Inshafa
+        </h2>
 
-              <li>
-                <a href="/about" className="hover:text-sky-200 p-2">
-                  About
-                </a>
-              </li>
+        {/* Desktop Menu */}
+        <ul className="flex md:hidden items-center gap-8 text-lg font-medium">
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <a
+                href={link.path}
+                className="hover:text-sky-300 transition duration-300"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
 
-              <li>
-                <a href="/skills" className="hover:text-sky-200 p-2">
-                  Skills
-                </a>
-              </li>
+          {/* Contact Button */}
+          <li>
+            <a
+              href="/contact"
+              className="bg-gradient-to-r from-sky-400 to-blue-600 px-5 py-2 rounded-full hover:scale-105 duration-300 shadow-lg"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
 
-              <li>
-                <a href="/projects" className="hover:text-sky-200 p-2">
-                  {" "}
-                  Projects
-                </a>
-              </li>
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden"
+        >
+          {menuOpen ? <X size={30} /> : <Menu size={30} />}
+        </button>
+      </nav>
 
-              <li>
-                <a href="/contact" className="hover:text-sky-200 p-2">
-                  Contact
-                </a>
-              </li>
-            </ul>
-            <div className="">
-              <ul className="flex justify-between items-center space-x-5">
-                <li>
-                  <a href="https://github.com/developerinshafa" target="_blank">
-                    <img
-                      src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png"
-                      alt="Github Image"
-                      width="25"
-                      className="cursor-pointer"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <button>☀</button>
-                </li>
-                </ul>
-              </div>
-          </nav>
-        </header>
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-500 ${
+          menuOpen ? "max-h-96" : "max-h-0"
+        }`}
+      >
+        <ul className="flex flex-col items-center gap-6 py-6 bg-[#0a0a0a] text-lg font-medium">
+          
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <a
+                href={link.path}
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-sky-300 duration-300"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
 
-        {/* <header className="flex text-white max-w-8xl mx-auto p-4 border-gray-300">
-          <div className="container mx-auto px-4">
-            <div className="flex justify-between ">
-              <nav className="flex justify-between font-bold text-2xl p-2 ">
-                <h2>M.Fathima Inshafa</h2>
-
-                <div className="space-x-8 hidden md:block">
-                  <NavLink to="/">Home</NavLink>
-
-                  <NavLink to="/about">About</NavLink>
-
-                  <NavLink to="/skills">Skills</NavLink>
-
-                  <NavLink to="/projects">Projects</NavLink>
-
-                  <NavLink to="/contact">Contact</NavLink>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </header> */}
+          <li>
+            <a
+              href="/contact"
+              onClick={() => setMenuOpen(false)}
+              className="bg-gradient-to-r from-sky-400 to-blue-600 px-6 py-2 rounded-full"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+         
       </div>
-    </>
+
+    
+    </header>
   );
 }
 

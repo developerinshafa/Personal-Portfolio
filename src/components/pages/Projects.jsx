@@ -1,152 +1,101 @@
+const projects = [
+  {
+    title: "Random Quote Generator",
+    image: "/img/Random Quote Generator.jpeg",
+    desc: "Built with HTML & Tailwind CSS",
+    link: "https://random-quote-generator-js-in.netlify.app/",
+  },
+  {
+    title: "Coffee Shop Website",
+    image: "/img/CoffeeShop.jpeg",
+    desc: "Modern coffee website using Tailwind CSS",
+    link: "https://my-great-coffee.netlify.app/",
+  },
+  {
+    title: "GitHub Profile Finder",
+    image: "/img/GitHub Profile Finder.jpeg",
+    desc: "Search GitHub profiles with JavaScript",
+    link: "#",
+  },
+  {
+    title: "Multi Timer Dashboard",
+    image: "/img/Multi Timer Dashboard.jpeg",
+    desc: "Multiple timers with JavaScript",
+    link: "https://multi-timer-dashboard-js.netlify.app/",
+  },
+  {
+    title: "React Website",
+    image: "/img/Website.jpeg",
+    desc: "Responsive website built with React",
+    link: "https://api-fatching-data.netlify.app/",
+  },
+  {
+    title: "Fetch API Project",
+    image: "/img/Fetch API .jpeg",
+    desc: "Form handling using Fetch API",
+    link: "https://form-create-with-fetch-api.netlify.app/",
+  },
+];
+
 export default function Projects() {
   return (
-    <>
-      <div className="project-bg space-y-15 bg-black pb-20 pt-15">
-        <div className="text-white p-5 text-center max-w-7xl mx-auto space-y-4">
-          <h1 className=" text-7xl font-bold">Projects</h1>
-          <p className="text-xl pt-4">
-            These are some of my Projects. I have built these with Tailwind CSS,
-            JavaScript & React. Check them out.
-          </p>
-        </div>
-        {/* My Project Lists */}
-        <div className="w-full max-w-7xl mx-auto ">
-          <div className="flex flex-wrap md:flex-row px-6 gap-4 text-white text-center ">
-            
-            {/* Random Quote Generator */}
-            <div className="relative">
+    <section className="bg-black py-20 px-5 overflow-hidden">
+      
+      {/* Heading */}
+      <div className="text-center max-w-3xl mx-auto mb-16">
+        <p className="text-sky-400 uppercase tracking-[5px] mb-4 text-xl">
+          My Work
+        </p>
+
+        <h1 className="text-5xl md:text-7xl font-bold text-white">
+          Projects
+        </h1>
+
+        <p className="text-gray-400 text-lg mt-6 leading-8">
+          Here are some of my creative frontend projects built using
+          Tailwind CSS, JavaScript and React.
+        </p>
+      </div>
+
+      {/* Project Cards */}
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="group relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-md hover:-translate-y-2 duration-500 shadow-lg"
+          >
+            {/* Image */}
+            <div className="overflow-hidden">
               <img
-                className="h-[300px] w-[400px]"
-                src="public/img/Random Quote Generator.jpeg"
-                alt="Random Quote Generator"
+                src={project.image}
+                alt={project.title}
+                className="w-full h-[260px] object-cover group-hover:scale-110 duration-500"
               />
-              <div className="pt-8 absolute left-0 right-0 bottom-0 top-0 bg-gray-700 font-bold text-xl duration-500 opacity-0 hover:opacity-100">
-                <p className="text-center px-5 py-5">
-                  Random Quote Generator. Built with HTML & Tailwind CSS.
-                </p>
-                <a
-                  href="https://random-quote-generator-js-in.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-400 text-xl font-bold rounded px-4 py-1 text-center cursor-pointer inline-block"
-                >
-                  Click
-                </a>
-              </div>
             </div>
 
-            {/* Coffee Shop Website */}
-            <div className="relative">
-              <img
-                className="h-[300px] w-[400px]"
-                src="public/img/CoffeeShop.jpeg"
-                alt="coffee shop"
-              />
-              <div className="pt-8 absolute left-0 right-0 bottom-0 top-0 bg-gray-700 font-bold text-xl duration-500 opacity-0 hover:opacity-100">
-                <p className="text-center px-5 py-5">
-                  Coffee Shop Website. Built with HTML & Tailwind CSS.
-                </p>
-                <a
-                  href="https://my-great-coffee.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-400 text-xl font-bold rounded px-4 py-1 text-center cursor-pointer inline-block"
-                >
-                  Click
-                </a>
-              </div>
-            </div>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 duration-500 flex flex-col justify-center items-center text-center px-6">
+              
+              <h2 className="text-2xl font-bold text-white mb-3">
+                {project.title}
+              </h2>
 
-            {/* GitHub Profile Finder */}
-            <div className="relative">
-              <img
-                className="h-[300px] w-[400px]"
-                src="public/img/GitHub Profile Finder.jpeg"
-                alt="GitHub Profile Finder"
-              />
-              <div className="pt-8 absolute left-0 right-0 bottom-0 top-0 bg-gray-700 font-bold text-xl duration-500 opacity-0 hover:opacity-100">
-                <p className="text-center px-5 py-5">
-                  GitHub Profile Finder. Built with JavaScript.
-                </p>
-                <a
-                  href="public/img/GitHub Profile Finder.jpeg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-400 text-xl font-bold rounded px-4 py-1 text-center cursor-pointer inline-block"
-                >
-                  Click
-                </a>
-              </div>
-            </div>
+              <p className="text-gray-300 mb-6">
+                {project.desc}
+              </p>
 
-            {/* Multi Timer Dashboard */}
-            <div className="relative">
-              <img
-                className="h-[300px] w-[400px]"
-                src="public/img/Multi Timer Dashboard.jpeg"
-                alt="Multi Timer Dashboard"
-              />
-              <div className="pt-8 absolute left-0 right-0 bottom-0 top-0 bg-gray-700 font-bold text-xl duration-500 opacity-0 hover:opacity-100">
-                <p className="text-center px-5 py-5">
-                  Multi Timer Dashboard. Built with JavaScript.
-                </p>
-                <a
-                  href="https://multi-timer-dashboard-js.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-400 text-xl font-bold rounded px-4 py-1 text-center cursor-pointer inline-block"
-                >
-                  Click
-                </a>
-              </div>
-            </div>
-
-            {/*Website  */}
-            <div className="relative">
-              <img
-                className="h-[300px] w-[400px]"
-                src="public/img/Website.jpeg"
-                alt="Website"
-              />
-              <div className="pt-8 absolute left-0 right-0 bottom-0 top-0 bg-gray-700 font-bold text-xl duration-500 opacity-0 hover:opacity-100">
-                <p className="text-center px-5 py-5">
-                  Website. Built with React.
-                </p>
-                <a
-                  href="https://api-fatching-data.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-400 text-xl font-bold rounded px-4 py-1 text-center cursor-pointer inline-block"
-                >
-                  Click
-                </a>
-              </div>
-            </div>
-
-            {/*  Fetch API */}
-            <div className="relative">
-              <img
-                className="h-[300px] w-[400px]"
-                src="public/img/Fetch API .jpeg"
-                alt="Fetch API"
-              />
-              <div className="pt-8 absolute left-0 right-0 bottom-0 top-0 bg-gray-700 font-bold text-xl duration-500 opacity-0 hover:opacity-100">
-                <p className="text-center px-5 py-5">
-                  Fetch API. Built with React & Fetch API
-                </p>
-                <a
-                  href="hhttps://form-create-with-fetch-api.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-blue-400 text-xl font-bold rounded px-4 py-1 text-center cursor-pointer inline-block"
-                >
-                  Click
-                </a>
-              </div>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-sky-300 to-blue-500 px-6 py-3 rounded-full text-white font-semibold hover:scale-105 duration-300"
+              >
+                Live Preview
+              </a>
             </div>
           </div>
-        </div>
+        ))}
       </div>
-    </>
+    </section>
   );
 }
