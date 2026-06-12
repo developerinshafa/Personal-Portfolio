@@ -68,7 +68,7 @@ export default function About() {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="https://flowcv.com/resume/3lf5nqwebb5f"
               className="border border-violet-500/30 bg-violet-500/10 hover:bg-violet-500/20 duration-300 px-8 py-4 rounded-xl font-semibold"
             >
               Download Resume
