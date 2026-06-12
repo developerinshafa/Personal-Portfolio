@@ -35,6 +35,12 @@ const projects = [
     desc: "Form handling using Fetch API",
     link: "https://form-create-with-fetch-api.netlify.app/",
   },
+   {
+    title: "Sri handloom website",
+    image: "/img/sri handloom.jpeg",
+    desc: "E-commerce website for handloom products",
+    link: "https://agent-6a2ac65c82cad013badfa80e--sri-handloom.netlify.app/",
+  },
 ];
 
 export default function Projects() {
