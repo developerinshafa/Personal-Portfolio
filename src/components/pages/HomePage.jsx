@@ -8,20 +8,20 @@ export default function HomePage() {
     <>
       {/* Home page */}
 
-      <section className="hero-bg bg-black bg-cover p-15 bg-linear-to-r to-violet-950 ">
+      <section className="hero-bg bg-black bg-cover p-15 bg-linear-to-r to-orange-950 ">
         <div className="flex justify-center md:flex-row items-center gap-4 p-8">
           <div className="p-4">
             <img
               src="/img/Profile image.jpeg"
               alt="profile image"
-              className="rounded-full w-170 p-2 bg-blue-600 bg-cover bg-linear-to-r to-violet-950"
+              className="rounded-full w-170 p-2 bg-orange-600 bg-cover bg-linear-to-r to-orange-950 border-orange-500 shadow-[0_0_80px_#f97316]"
             />
           </div>
           <div className="text-center text-white space-y-12 p-8 max-w-4xl mx-auto">
             <h2 className="font-bold text-5xl text-white ">
               Hi, I'm Fathima Inshafa
             </h2>
-            <h1 className="text-6xl italic bg-linear-to-r from-sky-300 to-blue-600 bg-clip-text font-extrabold text-transparent ...  ">
+            <h1 className="text-6xl italic bg-linear-to-r from-sky-300 to-orange-600 bg-clip-text font-extrabold text-transparent ...  ">
               And I'm a{/* 🔥 ANIMATED TEXT HERE */}
               <span className="from-sky-100 to-blue-700 not-italic">
                 <Typewriter
@@ -75,14 +75,14 @@ export default function HomePage() {
               </div> */}
 
               <div className="flex gap-10 text-center justify-center pt-5">
-                <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:scale-105 transition">
+                <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-orange-300 to-orange-400 hover:scale-105 transition">
                   View Projects
                 </button>
 
                 <a
                   href="public/resume.pdf"
                   download="Fathima-Inshafa-Resume.pdf"
-                  className="px-7 py-4 rounded-xl border border-white/10 bg-white/5 hover:bg-white hover:text-black duration-300 font-semibold"
+                  className="px-7 py-4 rounded-xl border border-white/10 bg-white/5 hover:bg-orange-300 hover:text-black duration-300 font-semibold"
                 >
                   Download Resume
                 </a>
@@ -96,7 +96,7 @@ export default function HomePage() {
       <div className="bg-black text-white px-10 py-16">
         {/* HEADER */}
         <div className="mb-10 max-w-6xl mx-auto space-y-6 ">
-          <p className="text-sky-400 uppercase tracking-[5px] text-lg">
+          <p className="text-orange-500 uppercase tracking-[5px] text-lg">
             About Me
             ----------------------------------------------------------------------------------
           </p>
@@ -114,7 +114,7 @@ export default function HomePage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {/* CARD 1 */}
           <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
-            <h2 className="text-lg font-semibold text-blue-300">
+            <h2 className="text-lg font-semibold text-orange-300">
               Production Frontend Delivery
             </h2>
             <p className="text-gray-400 mt-3 text-sm leading-6">
@@ -125,7 +125,7 @@ export default function HomePage() {
 
           {/* CARD 2 */}
           <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
-            <h2 className="text-lg font-semibold text-blue-300">
+            <h2 className="text-lg font-semibold text-orange-300">
               Current Industry Experience
             </h2>
             <p className="text-gray-400 mt-3 text-sm leading-6">
@@ -136,7 +136,7 @@ export default function HomePage() {
 
           {/* CARD 3 */}
           <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
-            <h2 className="text-lg font-semibold text-blue-300">
+            <h2 className="text-lg font-semibold text-orange-300">
               Full Stack Upgrade Path
             </h2>
             <p className="text-gray-400 mt-3 text-sm leading-6">
@@ -147,7 +147,7 @@ export default function HomePage() {
 
           {/* CARD 4 */}
           <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
-            <h2 className="text-lg font-semibold text-blue-300">
+            <h2 className="text-lg font-semibold text-orange-300">
               Admin System Thinking
             </h2>
             <p className="text-gray-400 mt-3 text-sm leading-6">
@@ -157,7 +157,7 @@ export default function HomePage() {
 
           {/* CARD 5 */}
           <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
-            <h2 className="text-lg font-semibold text-blue-300">
+            <h2 className="text-lg font-semibold text-orange-300">
               Modern Integrations
             </h2>
             <p className="text-gray-400 mt-3 text-sm leading-6">
@@ -167,7 +167,7 @@ export default function HomePage() {
 
           {/* CARD 6 */}
           <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
-            <h2 className="text-lg font-semibold text-blue-300">
+            <h2 className="text-lg font-semibold text-orange-300">
               Team Collaboration
             </h2>
             <p className="text-gray-400 mt-3 text-sm leading-6">
@@ -177,7 +177,7 @@ export default function HomePage() {
 
           {/* CARD 7 */}
           <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
-            <h2 className="text-lg font-semibold text-blue-300">
+            <h2 className="text-lg font-semibold text-orange-300">
               UI Quality Focus
             </h2>
             <p className="text-gray-400 mt-3 text-sm leading-6">
@@ -187,7 +187,7 @@ export default function HomePage() {
 
           {/* CARD 8 */}
           <div className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
-            <h2 className="text-lg font-semibold text-blue-300">
+            <h2 className="text-lg font-semibold text-orange-300">
               Continuous Learning
             </h2>
             <p className="text-gray-400 mt-3 text-sm leading-6">

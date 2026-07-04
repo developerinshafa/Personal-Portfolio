@@ -45,12 +45,12 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="bg-black py-20 px-5 overflow-hidden">
+    <section className="hero-bg bg-cover p-15 bg-linear-to-r to-orange-950 bg-black py-20 px-5 overflow-hidden">
       
       {/* Heading */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <p className="text-sky-400 uppercase tracking-[5px] mb-4 text-xl">
-          My Work
+        <p className="text-orange-500 uppercase tracking-[5px] mb-4 text-xl">
+          My Work 
         </p>
 
         <h1 className="text-5xl md:text-7xl font-bold text-white">
@@ -94,7 +94,7 @@ export default function Projects() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-sky-300 to-blue-500 px-6 py-3 rounded-full text-white font-semibold hover:scale-105 duration-300"
+                className="bg-gradient-to-r from-orange-300 to-orange-500 px-6 py-3 rounded-full text-white font-semibold hover:scale-105 duration-300"
               >
                 Live Preview
               </a>

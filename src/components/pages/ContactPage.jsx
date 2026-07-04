@@ -6,7 +6,7 @@ export default function Contact() {
       
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center mb-16">
-        <p className="text-sky-500 uppercase tracking-[5px] mb-4">
+        <p className="text-orange-500 uppercase tracking-[5px] mb-4">
           Get In Touch
         </p>
 
@@ -27,7 +27,7 @@ export default function Contact() {
         <div className="space-y-8">
           
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex items-center gap-5 hover:bg-white/10 duration-300">
-            <div className="bg-gradient-to-r from-sky-300 to-blue-500 p-4 rounded-full">
+            <div className="bg-gradient-to-r from-orange-300 to-orange-500 p-4 rounded-full">
               <Mail />
             </div>
 
@@ -40,7 +40,7 @@ export default function Contact() {
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex items-center gap-5 hover:bg-white/10 duration-300">
-            <div className="bg-gradient-to-r from-sky-300 to-blue-500 p-4 rounded-full">
+            <div className="bg-gradient-to-r from-orange-300 to-orange-500 p-4 rounded-full">
               <Phone />
             </div>
 
@@ -53,7 +53,7 @@ export default function Contact() {
           </div>
 
           <div className="bg-white/5 border border-white/10 rounded-2xl p-6 flex items-center gap-5 hover:bg-white/10 duration-300">
-            <div className="bg-gradient-to-r from-sky-300 to-blue-500 p-4 rounded-full">
+            <div className="bg-gradient-to-r from-orange-300 to-orange-500 p-4 rounded-full">
               <MapPin />
             </div>
 
@@ -109,7 +109,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-sky-300 to-blue-500 py-4 rounded-xl font-semibold text-lg hover:scale-[1.02] duration-300"
+              className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-orange-300 to-orange-500 py-4 rounded-xl font-semibold text-lg hover:scale-[1.02] duration-300"
             >
               Send Message
               <Send size={20} />

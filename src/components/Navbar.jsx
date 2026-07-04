@@ -17,7 +17,7 @@ function Navbar() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-5">
         
         {/* Logo */}
-        <h2 className="text-3xl font-extrabold italic bg-gradient-to-r from-sky-300 to-blue-500 bg-clip-text text-transparent">
+        <h2 className="text-3xl font-extrabold italic bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent">
           MF. Inshafa
         </h2>
 
@@ -27,7 +27,7 @@ function Navbar() {
             <li key={index}>
               <a
                 href={link.path}
-                className="hover:text-sky-300 transition duration-300"
+                className="hover:text-orange-300 transition duration-300"
               >
                 {link.name}
               </a>
@@ -38,7 +38,7 @@ function Navbar() {
           <li>
             <a
               href="/contact"
-              className="bg-gradient-to-r from-sky-400 to-blue-600 px-5 py-2 rounded-full hover:scale-105 duration-300 shadow-lg"
+              className="bg-gradient-to-r from-orange-400 to-orange-600 px-5 py-2 rounded-full hover:scale-105 duration-300 shadow-lg"
             >
               Contact
             </a>
@@ -67,7 +67,7 @@ function Navbar() {
               <a
                 href={link.path}
                 onClick={() => setMenuOpen(false)}
-                className="hover:text-sky-300 duration-300"
+                className="hover:text-orange-300 duration-300"
               >
                 {link.name}
               </a>
@@ -78,7 +78,7 @@ function Navbar() {
             <a
               href="/contact"
               onClick={() => setMenuOpen(false)}
-              className="bg-gradient-to-r from-sky-400 to-blue-600 px-6 py-2 rounded-full"
+              className="bg-gradient-to-r from-orange-400 to-orange-600 px-6 py-2 rounded-full"
             >
               Contact
             </a>
